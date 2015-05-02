@@ -1,0 +1,96 @@
+@media (max-width: @screen-md-max) {
+    /*1199px Mobile*/
+
+    .owl-carousel {
+        display: none!important;
+    }
+    .menu-block .logo a {
+        line-height: 0;
+    }
+    /*Wired Style Links*/
+    /*https://wordpress.org/support/topic/how-to-change-color-of-links-inside-post-only*/
+    /*http://codepen.io/pirrera/pen/emKqBp*/
+
+    .post-content a {
+        text-decoration: none;
+        border-bottom: 2px solid #ef8b80;
+        //        box-shadow: inset 0 -4px 0 #ef8b80;
+        color: inherit;
+        transition: background 0.1s cubic-bezier(.33, .66, .66, 1);
+    }
+    .post-content a:hover {
+        background: #ef8b80;
+    }
+    .single article.pluto-page-box .post-meta {
+        display: none!important;
+    }
+    .pluto-page-box .post-tags,
+    .post-categories {
+        display: none;
+    }
+        .single-post-top-share,
+        .single-post-top-reading-mode {
+            display: none!important;
+        }
+    .index-isotope.v1 article.pluto-post-box .post-title a {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+/* Closing bracket */
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: @screen-md-min) {
+    .menu-position-top .sub-menu {
+        top: 15px!important;
+    }
+    .menu-block .logo a {
+        line-height: 0;
+    }
+    /*Wired Style Links*/
+    /*https://wordpress.org/support/topic/how-to-change-color-of-links-inside-post-only*/
+    /*http://codepen.io/pirrera/pen/emKqBp*/
+
+    .post-content a {
+        text-decoration: none;
+        border-bottom: 2px solid #ef8b80;
+        //        box-shadow: inset 0 -4px 0 #ef8b80;
+        color: inherit;
+        transition: background 0.1s cubic-bezier(.33, .66, .66, 1);
+    }
+    .post-content a:hover {
+        background: #ef8b80;
+    }
+    .single article.pluto-page-box .post-body {
+        padding: 0 50px;
+    }
+    .single article.pluto-page-box .post-content {
+        color: #000;
+    }
+    .single article.pluto-page-box .post-meta {
+        display: none!important;
+    }
+    .pluto-page-box .post-tags,
+    .post-categories {
+        display: none;
+    }
+        .single-post-top-share,
+        .single-post-top-reading-mode {
+            display: none!important;
+        }
+    .index-isotope.v1 article.pluto-post-box .post-title a {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+/* Closing bracket */
+/*Increase font size on mobile*/
+
+@media (max-width: 767px) {
+    .page article.pluto-page-box .post-content,
+    .single article.pluto-page-box .post-content,
+    .index-fullwidth article.pluto-page-box .post-content {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
