@@ -5,7 +5,7 @@ if(session_id() == '') session_start();
  */
 
 if ( ! isset( $content_width ) ) {
-  $content_width = 474;
+  $content_width = 800; //Orig = 474
 }
 /**
  * Pluto only works in WordPress 3.6 or later.
