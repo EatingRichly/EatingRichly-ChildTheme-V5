@@ -77,7 +77,7 @@ function pluto_setup() {
   set_post_thumbnail_size( 672, 372, false );
   add_image_size( 'pluto-full-width', 1038, 576, false );
 //  add_image_size( 'pluto-index-width', 400, 700, false );
-  add_image_size( 'pluto-index-width', 550, 963, false ); /*EatingRichly Edit http://themeforest.net/item/pluto-clean-personal-wordpress-masonry-blog-theme/7950280/comments#comment_9890985*/
+  add_image_size( 'pluto-index-width', 550, 963, false ); /* EatingRichly Edit http://themeforest.net/item/pluto-clean-personal-wordpress-masonry-blog-theme/7950280/comments#comment_9890985 */
   add_image_size( 'pluto-fixed-height', 400, 300, true );
   add_image_size( 'pluto-fixed-height-image', 400, 700, true );
   add_image_size( 'pluto-top-featured-post', 200, 150, true );
