@@ -22,3 +22,15 @@ if ( ! isset( $content_width ) ) {
 /*Increase Thumbnail Image Size*/
 /* EatingRichly Edit http://themeforest.net/item/pluto-clean-personal-wordpress-masonry-blog-theme/7950280/comments#comment_9890985 */
   add_image_size( 'pluto-index-width', 550, 963, false );
+/*Alert on Staging Site*/
+/*http://stackoverflow.com/questions/6522023/php-if-domain*/
+$host = $_SERVER['HTTP_HOST'];
+if ($host === 'staging.eatingrichly.flywheelsites.com') {
+    function staging_admin_error_notice() {
+        $class = "error";
+        $message = "You are on the staging site.";
+            echo"<div class=\"$class\"> <p>$message</p></div>";
+    }
+    add_action( 'admin_notices', 'staging_admin_error_notice' );
+}
+/*End Alert on Staging Site*/
