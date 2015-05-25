@@ -116,7 +116,7 @@ $scheme_vars[ 'tagLinkBorderColor' ]           = '#75B9DD';
 $scheme_vars[ 'tagLinkColor' ]                 = '#3893C1';
 
 // SIDEBAR
-$scheme_vars[ 'sidebarWidth' ]                    = '300px';
+$scheme_vars[ 'sidebarWidth' ]                    = '360px';
 $scheme_vars[ 'sidebarBackgroundImage' ]          = 'none';
 $scheme_vars[ 'sidebarBackgroundColor' ]          = '#eaedf0';
 $scheme_vars[ 'sidebarBackgroundGradientFrom' ]   = '#eaedf0';
