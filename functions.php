@@ -6,7 +6,7 @@ if (!defined('ABSPATH'))
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
-        
+
 if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
     function chld_thm_cfg_parent_css() {
         wp_enqueue_style( 'chld_thm_cfg_parent', trailingslashit( get_template_directory_uri() ) . 'style.css' );
@@ -24,7 +24,7 @@ if ($host === 'staging.eatingrichly.flywheelsites.com') {
     {
         $class   = "error";
         $message = "You are on the staging site.";
-        echo "<div class=\"$class\"> <p>$message</p></div>";
+        echo "<div class=\"$class\"> <h1>$message</h1></div>";
     }
     add_action('admin_notices', 'staging_admin_error_notice');
 }
