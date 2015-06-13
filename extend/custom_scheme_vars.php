@@ -6,5 +6,5 @@
 
 // e.g
 // $scheme_vars[ 'bodyBackgroundColor' ]         = '#f0f3f5';
-$scheme_vars[ 'sidebarWidth' ]                    = '360px';
+$scheme_vars[ 'sidebarWidth' ]                    = '361px';
 ?>
