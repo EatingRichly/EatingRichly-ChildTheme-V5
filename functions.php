@@ -34,10 +34,6 @@ if ($host === 'staging.eatingrichly.flywheelsites.com') {
 function child_function()
 {
     // Contents for your function here.
-    /*Set Content Width*/
-    if (!isset($content_width)) {
-        $content_width = 800; //Orig = 474
-    }
     /*Increase Thumbnail Image Size*/
     /* EatingRichly Edit http://themeforest.net/item/pluto-clean-personal-wordpress-masonry-blog-theme/7950280/comments#comment_9890985 */
     add_image_size('pluto-index-width', 550, 963, false);
