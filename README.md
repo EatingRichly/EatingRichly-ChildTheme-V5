@@ -9,6 +9,8 @@ Version 4.0 Child Theme for http://EatingRichly.com
 1. open `pluto-osetin-theme/extend/custom_scheme_vars.php`
  1. add the following `$scheme_vars[ 'sidebarWidth' ]                    = '361px';`
  1. this changes the sidebar width to our custom `361px`.
+2. Upload the custom font to the assets folder and update the less 
+ 
 
 # Plugins
 - https://wordpress.org/plugins/custom-content-width/
