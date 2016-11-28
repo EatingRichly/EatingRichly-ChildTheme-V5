@@ -1,13 +1,16 @@
 /*
-Theme Name: Eating Richly v4
+Theme Name: Eating Richly v5
 Theme URI: https://github.com/EatingRichly/EatingRichly.com-V4
-Template: pluto-osetin-theme
+Template: pluto-by-osetin
 Author: EatingRichly.com
 Author URI: http://eatingrichly.com/about/#Eric
 Description: Child theme for the Pluto Theme
-Version: 4.1.2
-Updated: 2015-05-24 17:19:46
+Version: 5.0.0
+Updated: 2016-11-23 15:36:30
 */
 
 @charset "UTF-8";
 
+/*
+USE JETPACK CUSTOM CSS
+*/
