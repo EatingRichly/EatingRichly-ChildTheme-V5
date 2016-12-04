@@ -32,6 +32,13 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
   <![endif]-->
+    <!-- BLOGHER ADS Begin header tag -->
+<script type="text/javascript">
+  var blogherads = blogherads || {};
+  blogherads.adq = blogherads.adq || [];
+</script>
+<script type="text/javascript" async data-cfasync="false" src="//ads.blogherads.com/75/7512/header.js"></script>
+<!-- BLOGHER ADS End header tag -->
 </head>
 
 <body <?php body_class(); ?>>
