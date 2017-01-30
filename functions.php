@@ -40,3 +40,17 @@ function child_function()
 }
 add_action('init', 'child_function', 15);
 /*End Override Parent Functions*/
+// Disable owl carousel plugin
+
+function wpdocs_dequeue_script() {
+    wp_dequeue_script( 'pluto-owl-carousel' );
+}
+add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
+
+add_action( 'wp_enqueue_scripts', 'remove_default_stylesheet', 20 );
+
+function remove_default_stylesheet() {
+    
+    wp_dequeue_style( 'pluto-owl-carousel' );
+    
+}
