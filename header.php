@@ -139,7 +139,7 @@
       <div class="logo">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
           <?php if(get_field('logo_image', 'option')): ?>
-<?php/*            <img src="<?php the_field('logo_image', 'option'); ?>" alt=""> */?>
+<?php /*            <img src="<?php the_field('logo_image', 'option'); ?>" alt=""> */ ?>
 <img src="/wp-content/uploads/2015/04/Eating-Richly-v4-logo.png" srcset="/wp-content/uploads/2015/05/Eating-Richly-v4-logo-1x.png 1x, /wp-content/uploads/2015/05/Eating-Richly-v4-logo-2x.png 2x" alt="Eating Richly" width="139" height="204" nopin="nopin">
           <?php endif; ?>
           <?php if(get_field('logo_text', 'option')): ?>
