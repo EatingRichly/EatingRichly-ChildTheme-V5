@@ -45,6 +45,38 @@
   <?php if(get_field('google_analytics_code', 'option')): ?>
     <?php the_field('google_analytics_code', 'option'); ?>
   <?php endif; ?>
+  <div class="all-wrapper">
+  <?php if(get_current_menu_position() == "top"): ?>
+    <div class="menu-position-top menu-style-v2">
+    <div class="fixed-header-w">
+      <div class="menu-block">
+        <div class="menu-inner-w">
+          <div class="logo">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+              <?php if(get_field('logo_image', 'option')): ?>
+                <img src="<?php the_field('logo_image', 'option'); ?>" alt="">
+              <?php endif; ?>
+              <?php if(get_field('logo_text', 'option')): ?>
+                <span><?php the_field('logo_text', 'option'); ?></span>
+              <?php endif; ?>
+            </a>
+          </div>
+          <div class="menu-activated-on-hover menu-w">
+            <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'os_menu')); ?>
+          </div>
+          <?php if(!get_field('hide_search_box_from_top_bar', 'option')){ ?>
+            <div class="menu-search-form-w <?php if(!get_field('no_hide_search_box_on_smaller_screens', 'option')) echo 'hide-on-narrow-screens'; ?>">
+              <div class="search-trigger"><i class="os-icon-search"></i></div>
+            </div>
+          <?php } ?>
+          <div class="menu-social-w hidden-sm hidden-md">
+            <?php if( function_exists('zilla_social') ) zilla_social(); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <?php endif; ?>
   <div class="menu-block <?php if(get_field('hide_widgets_under_menu', 'option') == TRUE) echo 'hidden-on-smaller-screens'; ?>">
     <?php if(get_current_menu_position() == "top"): ?>
       <?php if(get_current_menu_style() == 'v2'){ ?>
@@ -59,10 +91,14 @@
               <?php endif; ?>
             </a>
           </div>
-          <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'os_menu')); ?>
-          <div class="menu-search-form-w">
-            <?php get_search_form(); ?>
+          <div class="menu-activated-on-hover menu-w">
+            <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'os_menu')); ?>
           </div>
+          <?php if(!get_field('hide_search_box_from_top_bar', 'option')){ ?>
+            <div class="menu-search-form-w <?php if(!get_field('no_hide_search_box_on_smaller_screens', 'option')) echo 'hide-on-narrow-screens'; ?>">
+              <div class="search-trigger"><i class="os-icon-search"></i></div>
+            </div>
+          <?php } ?>
           <div class="menu-social-w hidden-sm hidden-md">
             <?php if( function_exists('zilla_social') ) zilla_social(); ?>
           </div>
@@ -71,6 +107,9 @@
       <div class="menu-inner-w">
         <div class="container-fluid">
           <div class="row">
+            <div class="col-sm-4">
+              <?php if( function_exists('zilla_social') ) zilla_social(); ?>
+            </div>
             <div class="col-sm-4">
               <div class="logo">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -84,26 +123,24 @@
               </div>
             </div>
             <div class="col-sm-4">
-              <?php if( function_exists('zilla_social') ) zilla_social(); ?>
-            </div>
-            <div class="col-sm-4">
               <?php get_search_form(); ?>
             </div>
           </div>
         </div>
       </div>
+      <div class="menu-activated-on-hover">
         <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'os_menu')); ?>
+      </div>
       <?php } ?>
 
     <?php else: ?>
 
-
+      <div class="menu-left-i">
       <div class="logo">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
           <?php if(get_field('logo_image', 'option')): ?>
-
+<?php/*            <img src="<?php the_field('logo_image', 'option'); ?>" alt=""> */?>
 <img src="/wp-content/uploads/2015/04/Eating-Richly-v4-logo.png" srcset="/wp-content/uploads/2015/05/Eating-Richly-v4-logo-1x.png 1x, /wp-content/uploads/2015/05/Eating-Richly-v4-logo-2x.png 2x" alt="Eating Richly" width="139" height="204" nopin="nopin">
-
           <?php endif; ?>
           <?php if(get_field('logo_text', 'option')): ?>
             <span><?php the_field('logo_text', 'option'); ?></span>
@@ -114,8 +151,9 @@
 
       <div class="divider"></div>
 
-      <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'os_menu')); ?>
-
+      <div class="menu-activated-on-click">
+        <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'os_menu')); ?>
+      </div>
 
 
       <?php if(get_field('search_form_position', 'option') == 'under_menu') get_search_form(); ?>
@@ -141,19 +179,15 @@
       <?php endif; ?>
 
 
+      </div>
+
     <?php endif; ?>
   </div>
   <div class="menu-toggler-w">
     <a href="#" class="menu-toggler">
-      <i class="fa os-icon-bars"></i>
+      <i class="os-new-icon os-new-icon-menu"></i>
       <span class="menu-toggler-label"><?php _e('Menu', 'pluto') ?></span>
     </a>
-    <?php if(get_field('show_sidebar_on_mobile', 'option')){ ?>
-      <a href="#" class="sidebar-toggler">
-        <i class="fa os-icon-bars"></i>
-        <span class="sidebar-toggler-label"><?php _e('Sidebar', 'pluto') ?></span>
-      </a>
-    <?php } ?>
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
       <?php if(get_field('logo_image', 'option')): ?>
         <img src="<?php the_field('logo_image', 'option'); ?>" alt="">
@@ -162,9 +196,16 @@
         <span><?php the_field('logo_text', 'option'); ?></span>
       <?php endif; ?>
     </a>
+      <a href="#" class="sidebar-toggler">
+        <i class="os-new-icon os-new-icon-grid"></i>
+        <span class="sidebar-toggler-label"><?php _e('Sidebar', 'pluto') ?></span>
+      </a>
+  </div>
+  <div class="mobile-menu-w">
+    <?php wp_nav_menu(array('theme_location'  => 'side_menu', 'fallback_cb' => false, 'container_class' => 'mobile-menu menu-activated-on-click')); ?>
   </div>
   <?php if(get_field('show_sidebar_on_mobile', 'option')){ ?>
     <div class="sidebar-main-toggler">
-      <i class="fa os-icon-bars"></i>
+      <i class="os-new-icon os-new-icon-grid"></i>
     </div>
   <?php } ?>
