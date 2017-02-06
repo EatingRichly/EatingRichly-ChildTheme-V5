@@ -11,7 +11,7 @@
 <div class="main-content-m">
   <?php os_the_primary_sidebar('left'); ?>
   <div class="main-content-i">
-    <?php require_once(get_template_directory() . '/inc/partials/featured-slider.php') ?>
+    <?php// require_once(get_template_directory() . '/inc/partials/featured-slider.php') ?>
     <div class="content side-padded-content reading-mode-content">
       <?php if ( is_active_sidebar( 'sidebar-3' ) ){ ?>
         <div class="top-sidebar-wrapper"><?php dynamic_sidebar( 'sidebar-3' ); ?></div>
@@ -28,7 +28,7 @@
           </div>
           <?php } ?>
         <?php } ?>
-        <?php osetin_generate_sub_bar(); ?>
+        <?php// osetin_generate_sub_bar(); ?>
         <?php get_template_part( 'single-content', get_post_format() ); ?>
         <?php if(get_field('single_post_navigation_type', 'option') == 'unique'){ ?>
           <?php if (get_adjacent_post(false, '', false)){ ?>
