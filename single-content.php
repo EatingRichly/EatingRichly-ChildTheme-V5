@@ -72,6 +72,7 @@
       ?>
     </div>
   </div>
+<?php /*
   <div class="post-meta entry-meta">
     <div class="meta-like">
       <?php // if( function_exists('zilla_likes') ) zilla_likes(); ?>
@@ -79,7 +80,8 @@
     </div>
     <div class="os_social-foot-w hidden-xs"><?php echo do_shortcode('[os_social_buttons]'); ?></div>
   </div>
-
+*/ ?>
+<?php /*
   <div class="modal fade" id="qrcode-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -99,4 +101,5 @@
       </div>
     </div>
   </div>
+*/ ?>
 </article>
