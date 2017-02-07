@@ -11,7 +11,6 @@ Updated: 2016-11-28 15:23:44
 
 @charset "UTF-8";
 
-
 /*Increase font size on mobile*/
 
 @media (max-width: 767px) {
@@ -22,8 +21,14 @@ Updated: 2016-11-28 15:23:44
         line-height: 19px;
     }
 }
+
+
 /* Change Mobile Logo to our Pear */
+
+
 /* https://css-tricks.com/replace-the-image-in-an-img-with-css/ */
+
+
 /* https://css-tricks.com/using-svg/ */
 
 .menu-toggler-w .logo img {
@@ -37,7 +42,9 @@ Updated: 2016-11-28 15:23:44
     padding-left: 32px;
 }
 
+
 /* Add menu margin so it is not so large*/
+
 .menu-block .os_menu ul,
 .menu-block .divider {
     margin-bottom: 20px;
