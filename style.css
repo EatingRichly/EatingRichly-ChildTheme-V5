@@ -49,3 +49,19 @@ Updated: 2016-11-28 15:23:44
 .menu-block .divider {
     margin-bottom: 20px;
 }
+
+
+/* Increase Article font size */
+
+.page article.pluto-page-box .post-content,
+.single article.pluto-page-box .post-content,
+.index-fullwidth article.pluto-page-box .post-content {
+    font-size: 18px;
+}
+
+
+/* Fit the left ads in easier. */
+
+.menu-block {
+    padding: 50px 25px 0 50px;
+}
