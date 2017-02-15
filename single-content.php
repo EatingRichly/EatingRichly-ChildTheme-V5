@@ -39,8 +39,8 @@
             <div class="post-author"><?php _e('by', 'pluto'); ?> <strong class="author vcard"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) )) ; ?>" class="url fn n" rel="author"><?php echo get_the_author(); ?></a></strong></div>
           </div>
           <div class="col-md-6">
-            <?php the_tags('<ul class="post-tags"><li>','</li><li>','</li></ul>'); ?>
-            <?php echo get_the_category_list(); ?>
+            <?php/* the_tags('<ul class="post-tags"><li>','</li><li>','</li></ul>'); */?>
+            <?php/* echo get_the_category_list(); */?>
           </div>
 
         <?php endif; ?>
