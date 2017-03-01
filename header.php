@@ -32,6 +32,8 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
   <![endif]-->
+
+<?php /*
 <!-- BLOGHER ADS Begin header tag -->
 <script type="text/javascript">
   var blogherads = blogherads || {};
@@ -39,6 +41,8 @@
 </script>
 <script type="text/javascript" async="async" data-cfasync="false" src="https://8e1e2b96a7135bb91f93-d53fc2265c3d2abffdf72eae7f40edbe.ssl.cf1.rackcdn.com/75/7512/header.js"></script>
 <!-- BLOGHER ADS End header tag -->
+ */ ?>
+
 </head>
 
 <body <?php body_class(); ?>>
